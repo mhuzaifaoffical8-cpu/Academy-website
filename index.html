@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bright Path Academy – Enroll & Pay Fees</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><div class="wrap"><div class="logo">Bright<span>Path</span> Academy</div>
+<div><a href="#courses">Courses</a><a href="#how">How it works</a><a href="#pay">Pay Fees</a><a class="keep" href="#enroll">Enroll</a></div></div></nav>
+
+<header class="hero"><div class="wrap">
+<h1>Learn skills that change your future</h1>
+<p>Expert-led courses, small batches, friendly teaching. Enroll in minutes and pay your fees easily with JazzCash, Easypaisa or bank transfer.</p>
+<a class="btn" href="#enroll">Enroll Now</a>
+<div class="stats"><div><b>500+</b>Students</div><div><b>4</b>Courses</div><div><b>95%</b>Success rate</div></div>
+</div></header>
+
+<section id="courses"><div class="wrap">
+<h2>Our Courses</h2><p class="sub">Pick a course and start this month.</p>
+<div class="grid" id="cg"></div></div></section>
+
+<section id="how" style="background:var(--card)"><div class="wrap">
+<h2>How it works</h2><p class="sub">Three simple steps.</p>
+<div class="steps">
+<div class="card"><b>Choose a course</b><p style="color:var(--mut);margin:4px 0 0">Select your course and fee plan below.</p></div>
+<div class="card"><b>Send your enrollment</b><p style="color:var(--mut);margin:4px 0 0">Fill the form; it opens WhatsApp with your details ready.</p></div>
+<div class="card"><b>Pay & get confirmed</b><p style="color:var(--mut);margin:4px 0 0">Pay by your preferred method and send the receipt.</p></div>
+</div></div></section>
+
+<section id="enroll"><div class="wrap">
+<h2>Enroll in a Course</h2><p class="sub">Fill in your details and see your fee instantly.</p>
+<div class="two">
+<div class="card">
+<label>Full name</label><input id="n" placeholder="Student name">
+<label>Phone / WhatsApp</label><input id="ph" type="tel" placeholder="03XX XXXXXXX">
+<label>Email (optional)</label><input id="em" type="email" placeholder="you@example.com">
+<label>Course</label><select id="co"></select>
+<label>Fee plan</label>
+<select id="pl"><option value="full">Pay full fee (5% discount)</option><option value="month">Monthly installments</option></select>
+<p id="err" style="color:#dc2626;font-size:.88rem;min-height:1.2em;margin:10px 0 0"></p>
+<button class="btn p" id="go">Send Enrollment on WhatsApp</button>
+</div>
+<div class="card sum"><h3 style="margin:0 0 8px">Fee summary</h3>
+<div class="row"><span>Course</span><b id="s1">–</b></div>
+<div class="row"><span>Duration</span><b id="s2">–</b></div>
+<div class="row"><span>Registration fee</span><b id="s3">–</b></div>
+<div class="row"><span>Discount</span><b id="s4">–</b></div>
+<div class="row t"><span>Pay now</span><span id="s5">–</span></div>
+<p id="s6" style="color:var(--mut);font-size:.85rem;margin:8px 0 0"></p></div>
+</div></div></section>
+
+<section id="pay" style="background:var(--card)"><div class="wrap">
+<h2>Pay Your Fees</h2><p class="sub">Choose a method, pay, then send your receipt screenshot on WhatsApp.</p>
+<div class="card" style="background:var(--bg)">
+<div class="tabs" id="tb"><button class="on" data-t="jc">JazzCash</button><button data-t="ep">Easypaisa</button><button data-t="bk">Bank Transfer</button><button data-t="cs">Cash at Academy</button></div>
+<div class="pm on" id="jc"><div class="kv"><span>Account title</span><b>Muhammad Hasnain Maqsood</b></div><div class="kv"><span>JazzCash number</span><b>03281407504</b><button class="cp" data-c="03000000000">Copy</button></div></div>
+<div class="pm" id="ep"><div class="kv"><span>Account title</span><b>Muhammad Huzaifa</b></div><div class="kv"><span>Easypaisa number</span><b>03423300516</b><button class="cp" data-c="03000000000">Copy</button></div></div>
+<div class="pm" id="bk"><div class="kv"><span>Bank</span><b>Your Bank Name</b></div><div class="kv"><span>Account title</span><b>YOUR NAME</b></div><div class="kv"><span>IBAN</span><b>PK00XXXX0000000000000000</b><button class="cp" data-c="PK00XXXX0000000000000000">Copy</button></div></div>
+<div class="pm" id="cs"><div class="kv"><span>Address</span><b>Bhakkar</b></div><div class="kv"><span>Timings</span><b>Mon–Sat, 9 AM – 7 PM</b></div></div>
+<div class="note">After paying, send a screenshot with your name and course. We confirm your payment within a few hours.</div>
+<a class="btn p" style="text-align:center;margin-top:14px;color:#fff" id="rc" href="#">Send Payment Receipt on WhatsApp</a>
+</div></div></section>
+
+<footer><div class="wrap"><b>BrightPath Academy</b> <br>© 2026 All rights reserved.</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
